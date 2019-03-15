@@ -24,7 +24,7 @@ class DataEncoder(Config):
         return ohe_encoded_df
 
     def size_range_encoder(self):
-        # encode size_range 
+        # encode size_range
         ordered_size_range = {}
         le_size = preprocessing.LabelEncoder()
         le_size.fit(df['size_range'])
